@@ -7,7 +7,7 @@ int main()
     int cont;
     media = 0;
 
-    for(cont=1; cont<=5; cont++)
+    for(cont=1; cont<=40; cont++)
     {
         printf("Digite a primeira nota do aluno: \n");
         scanf("%f",&nota1);
@@ -20,11 +20,11 @@ int main()
 
         if (media >= 7)
         {
-            printf("Aluno Aprovado!\n");
+            printf("Aluno Aprovado com média %.2f\n", media);
         }
         else
         {
-            printf("Aluno Reprovado!\n");
+            printf("Aluno Reprovado com média %.2f\n", media);
         }
     }
 
