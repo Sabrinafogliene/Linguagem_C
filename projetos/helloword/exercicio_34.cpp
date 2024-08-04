@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main() {
+    int vet[5] = {0,0,0,0,0}, i;
+    char letra;
+    printf("Digite uma letra (ou 'z' para terminar):\n");
+    scanf(" %c", &letra);
+           
+    while (letra != 'z')
+    {
+        switch (letra)
+        {
+            case 'a':
+                vet[0]++;
+                break;
+            case 'e':
+                vet[1]++;
+                break;
+            case 'i':
+                vet[2]++;
+                break;
+            case 'o':
+                vet[3]++;
+                break;
+            case 'u':
+                vet[4]++;
+                break;
+        }
+        scanf("%c", &letra);
+    }
+    printf("Quantidade de cada vogal, em ordem \n");
+    for (i=0; i<5; i++)
+    {
+        printf("%d ", vet[i]);
+    }
+    return 0;
+}
